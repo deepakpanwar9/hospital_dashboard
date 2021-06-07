@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <script src="https://kit.fontawesome.com/74552717df.js" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <!-- <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div> -->
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo">
+                    <i class="fas fa-lungs-virus"></i><span class="nav_logo-name">The Renal project</span> </a>
+                <div class="nav_list">
+                    <a href="index.html" class="nav_link active"> <i class="fas fa-chart-line"></i> <span
+                            class="nav_name">Dashboard</span> </a>
+                    <a href="add_doctor.html" class="nav_link"> <i class="fas fa-user-md"></i> <span class="nav_name">Doctors</span>
+                    </a>
+                    <a href="add_staff.html" class="nav_link"><i class="fas fa-users"></i> <span class="nav_name">Staff</span> </a>
+                    <a href="add_branch.html" class="nav_link"> <i class="fas fa-procedures"></i> <span
+                            class="nav_name">Branches</span> </a>
+                    <a href="#" class="nav_link"><i class="fas fa-file-signature"></i></i> <span
+                            class="nav_name">Reports</span> </a>
+                    <a href="#" class="nav_link"> <i class="fas fa-exclamation-triangle"></i> <span
+                            class="nav_name">Complains</span> </a>
+                </div>
+                <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+                        class="nav_name">SignOut</span> </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container " style="margin-top: 100px;">
+        <div class="row">
+
+
+            <div class="col-md-4 col-xl-4">
+                <div class="card bg-c-blue order-card">
+                    <div class="card-block">
+                        <h3 class="m-b-20">Doctors</h3>
+                        <h2 class="text-right"><i class="fa fa-user-md f-right"></i><span>100</span></h2>
+                        <p class="m-b-0">Total numbers of doctors listed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xl-4">
+                <div class="card bg-c-green order-card">
+                    <div class="card-block">
+                        <h3 class="m-b-20">Staff</h3>
+                        <h2 class="text-right"><i class="fa fa-users f-right"></i><span>120</span></h2>
+                        <p class="m-b-0">Total Numbers of staff listed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xl-4">
+                <div class="card bg-c-yellow order-card">
+                    <div class="card-block">
+                        <h3 class="m-b-20">Branches</h3>
+                        <h2 class="text-right"><i class="fas fa-procedures f-right"></i><span>50</span></h2>
+                        <p class="m-b-0">Total Number of Branches</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col-md-4 col-xl-3">
+                            <div class="card bg-c-pink order-card">
+                                <div class="card-block">
+                                    <h6 class="m-b-20">Orders Received</h6>
+                                    <h2 class="text-right"><i class="fa fa-credit-card f-right"></i><span>486</span></h2>
+                                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                                </div>
+                            </div>
+                        </div> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="tabs pb-5">
+                    <div class="tab-header">
+                      <div class="active">
+                        <i class="fas fa-user-md"></i>Doctors
+                      </div>
+                      <div>
+                        <i class="fas fa-users"></i> Staff
+                      </div>
+                      <div>
+                        <i class="fas fa-procedures"></i> Branches
+                      </div>
+                      <!-- <div>
+                        <i class="fa fa-envelope-o"></i> Contact
+                      </div> -->
+                    </div>
+                    <div class="tab-indicator"></div>
+                    <div class="tab-body">
+                      <div class="active">
+                        <h2>Doctors Pannel</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error neque saepe commodi blanditiis fugiat nisi aliquam ratione porro quibusdam in, eveniet accusantium cumque. Dolore officia reprehenderit perferendis quod libero omnis.</p>
+                          <a href="add_doctor.html"><button  type="button" class="btn btn-outline-primary mt-5 ">Add a doctor</button></a>
+                      </div>
+                      <div>
+                        <h2>Staff Pannel</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+                       <a href="add_staff.html"> <button type="button" class="btn btn-outline-primary mt-5">add staff</button></a>
+                      </div>
+                      <div>
+                        <h2>Branch Pannel </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+                        <a href="add_branch.html"> <button type="button" class="btn btn-outline-primary mt-5">Add branches</button></a>
+                      </div>
+                      <!-- <div>
+                        <h2>This is contact section</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+                      </div> -->
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+   
+     
+     
+     
+     <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            const showNavbar = (toggleId, navId, bodyId, headerId) => {
+                const toggle = document.getElementById(toggleId),
+                    nav = document.getElementById(navId),
+                    bodypd = document.getElementById(bodyId),
+                    headerpd = document.getElementById(headerId)
+
+                // Validate that all variables exist
+                if (toggle && nav && bodypd && headerpd) {
+                    toggle.addEventListener('click', () => {
+                        // show navbar
+                        nav.classList.toggle('show')
+                        // change icon
+                        toggle.classList.toggle('bx-x')
+                        // add padding to body
+                        bodypd.classList.toggle('body-pd')
+                        // add padding to header
+                        headerpd.classList.toggle('body-pd')
+                    })
+                }
+            }
+
+            showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+            /*===== LINK ACTIVE =====*/
+            const linkColor = document.querySelectorAll('.nav_link')
+
+            function colorLink() {
+                if (linkColor) {
+                    linkColor.forEach(l => l.classList.remove('active'))
+                    this.classList.add('active')
+                }
+            }
+            linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+
+        });
+
+        let tabHeader = document.getElementsByClassName("tab-header")[0];
+let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+let tabBody = document.getElementsByClassName("tab-body")[0];
+ 
+let tabsPane = tabHeader.getElementsByTagName("div");
+ 
+for(let i=0;i<tabsPane.length;i++){
+  tabsPane[i].addEventListener("click",function(){
+    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
+    tabsPane[i].classList.add("active");
+    tabBody.getElementsByClassName("active")[0].classList.remove("active");
+    tabBody.getElementsByTagName("div")[i].classList.add("active");
+    
+    tabIndicator.style.left = `calc(calc(100% / 3) * ${i})`;
+  });
+}
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <script src="https://kit.fontawesome.com/74552717df.js" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <!-- <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div> -->
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo">
+                    <i class="fas fa-lungs-virus"></i><span class="nav_logo-name">The Renal project</span> </a>
+                <div class="nav_list">
+                    <a href="index.html" class="nav_link active"> <i class="fas fa-chart-line"></i> <span
+                            class="nav_name">Dashboard</span> </a>
+                    <a href="add_doctor.html" class="nav_link"> <i class="fas fa-user-md"></i> <span class="nav_name">Doctors</span>
+                    </a>
+                    <a href="add_staff.html" class="nav_link"><i class="fas fa-users"></i> <span class="nav_name">Staff</span> </a>
+                    <a href="add_branch.html" class="nav_link"> <i class="fas fa-procedures"></i> <span
+                            class="nav_name">Branches</span> </a>
+                    <a href="#" class="nav_link"><i class="fas fa-file-signature"></i></i> <span
+                            class="nav_name">Reports</span> </a>
+                    <a href="#" class="nav_link"> <i class="fas fa-exclamation-triangle"></i> <span
+                            class="nav_name">Complains</span> </a>
+                </div>
+                <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+                        class="nav_name">SignOut</span> </a>
+            </div>
+        </nav>
+        </div>
+
+        <div class="card shadow p-3 mb-5 bg-white rounded"
+      style="width: 60rem; height: 900px; margin-top: 50px; margin-left: 50px">
+      <div class="card-body">
+        <h5 class="card-title display-5 mb-5">Branch </h5>
+        <form> 
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label"> Branch Name</label>
+            <div class="col-sm-5">
+              <input type="subject" class="form-control" id="inputPassword3" name="subject" />
+            </div>
+          </div>
+         
+            
+            </div>
+          
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+              <!-- <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+               <label class="form-check-label" for="gridCheck1">
+                Example checkbox
+              </label> 
+            </div>  -->
+            </div>
+          </div>
+          <div class="mb-3 col-sm-5">
+            <label for="formGroupExampleInput" class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="Number" name="number" />
+          </div>
+          <div class="mb-3 col-sm-5">
+            <label for="formGroupExampleInput2" class="form-label">loaction</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2"
+              placeholder="Doctor-Id" name="through" />
+          </div>
+          <div class="mb-3 col-sm-5">
+            <label for="formGroupExampleInput2" class="form-label">Manager -Id</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2"
+              placeholder="Branch name" name="through" />
+          </div>
+
+          <!-- 
+           <div class="form-group shadow-textarea">
+            <label for="exampleFormControlTextarea6">Shadow and placeholder</label>
+            <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
+          </div>  -->
+
+          <div class="form-group shadow-textarea">
+            <label for="exampleFormControlTextarea6"> Branch Description</label>
+            <textarea class="form-control z-depth-1 shadow p-3 mb-5 bg-white rounded" id="exampleFormControlTextarea6"
+              rows="5" placeholder="Details..." name="details"></textarea>
+          </div>
+
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile" />
+            <label class="custom-file-label" for="customFile"></label>
+          </div>
+          <button type="submit" class="btn btn-primary mt-5">Add</button>
+        </form>
+        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> 
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a> -->
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+const showNavbar = (toggleId, navId, bodyId, headerId) => {
+    const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId),
+        bodypd = document.getElementById(bodyId),
+        headerpd = document.getElementById(headerId)
+
+    // Validate that all variables exist
+    if (toggle && nav && bodypd && headerpd) {
+        toggle.addEventListener('click', () => {
+            // show navbar
+            nav.classList.toggle('show')
+            // change icon
+            toggle.classList.toggle('bx-x')
+            // add padding to body
+            bodypd.classList.toggle('body-pd')
+            // add padding to header
+            headerpd.classList.toggle('body-pd')
+        })
+    }
+}
+
+showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+/*===== LINK ACTIVE =====*/
+const linkColor = document.querySelectorAll('.nav_link')
+
+function colorLink() {
+    if (linkColor) {
+        linkColor.forEach(l => l.classList.remove('active'))
+        this.classList.add('active')
+    }
+}
+linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+
+});
+
+    </script>
+        
+   
+
+
+
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
